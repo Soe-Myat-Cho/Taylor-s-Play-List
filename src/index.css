@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Glow Button */
-.glow-button {
+/* .glow-button {
   position: relative;
   z-index: 10;
   box-shadow: 0 0 10px 3px rgba(0, 255, 0, 0.5),
@@ -12,6 +12,22 @@
 
 .glow-ring {
   filter: blur(8px);
+} */
+
+.glow-button {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+/* .glow-button {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 123, 255, 0.4);
+} */
+
+.glow-ring {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
 }
 
 @keyframes gradient {

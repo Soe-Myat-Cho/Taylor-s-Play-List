@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
-import useMusicStore from '../store/useMusicStore';
+import React, { useEffect, useRef, useState } from "react";
+import useMusicStore from "../store/useMusicStore";
 
 const SongDetails = () => {
-  const {currentSongIndex,musicLists,isPlaying} =  useMusicStore()
+  const { currentSongIndex, musicLists, isPlaying } = useMusicStore();
 
   const diskRef = useRef(null); // Reference to the spinning disk
 
@@ -29,7 +29,6 @@ const SongDetails = () => {
     return () => cancelAnimationFrame(animationId);
   }, [isPlaying]);
 
-
   return (
     <div className="flex flex-col items-center">
       {/* Spinning Disk */}
@@ -54,11 +53,14 @@ const SongDetails = () => {
 
       {/* Song title & artist */}
       <div className="text-center my-5">
-        <h2 className="text-xl font-bold text-white"> {currentSong.title} </h2>
-        <p className="text-gray-400">{currentSong.artist}</p>
+        <h2 className="text-2xl font-semibold text-white">
+          {" "}
+          {currentSong.title}{" "}
+        </h2>
+        <p className="   text-gray-500">{currentSong.artist}</p>
       </div>
     </div>
   );
-}
+};
 
-export default SongDetails
+export default SongDetails;

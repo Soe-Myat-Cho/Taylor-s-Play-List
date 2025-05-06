@@ -17,9 +17,13 @@ const MusicPlayer = () => {
   }, []);
 
   return (
-    <div className="p-10 bg-blue-200 rounded-xl  w-80 opacity-85 ">
+    <div className="px-10 pb-10 pt-4 bg-blue-200 rounded-xl  w-80 opacity-85 ">
       {/* Top Header Section */}
-
+      <div className="flex items-center justify-between mb-4">
+        <h1 className="text-2xl text-white font-semibold">
+          Taylor Swift on repeat
+        </h1>
+      </div>
       <SongDetails />
       <Controls />
 
